@@ -5,7 +5,9 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn clean install
+  post_build:
+    commands:
+      - mv target/ROOT.war ROOT.war
 artifacts:
   files:
-    - target/ROOT.war
-  discard-paths: yes
+    - ROOT.war
