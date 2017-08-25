@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Map;
 
 /**
@@ -33,6 +34,12 @@ public class ApiController {
     @RequestMapping("/ci-test")
     public String ciTesting(){
         return "it works";
+    }
+
+
+    @RequestMapping("/now")
+    public Date ciTesting2(){
+        return new Date();
     }
 
 
