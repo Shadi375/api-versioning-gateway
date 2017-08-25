@@ -29,6 +29,12 @@ public class ApiController {
                 .build();
     }
 
+
+    @RequestMapping("/ci-test")
+    public String ciTesting(){
+        return "it works";
+    }
+
     @RequestMapping("/gate-way")
     public String apiGateway(){
         return "api-gateway";
