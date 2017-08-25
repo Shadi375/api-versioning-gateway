@@ -7,4 +7,4 @@ phases:
       - mvn clean install
 artifacts:
   files:
-    - target/ROOT.war
+    - ROOT.war
