@@ -35,10 +35,6 @@ public class ApiController {
         return "it works";
     }
 
-    @RequestMapping("/ci-test-2")
-    public String ciTesting2(){
-        return "it works";
-    }
 
     @RequestMapping("/gate-way")
     public String apiGateway(){
