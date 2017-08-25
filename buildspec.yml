@@ -10,4 +10,5 @@ phases:
       - mv target/ROOT.war ROOT.war
 artifacts:
   files:
-    - ROOT.war
+    - '**/*'
+  base-directory: 'target/ROOT'
