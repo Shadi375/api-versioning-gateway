@@ -37,6 +37,10 @@ public class ApiController {
     }
 
 
+    /**
+     * trigger deployment
+     * @return
+     */
     @RequestMapping("/now")
     public Date ciTesting2(){
         return new Date();
